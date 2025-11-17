@@ -39,7 +39,11 @@ const signup = () => {
             <form onSubmit={reguser}>
                 <label>name</label>
                 <input type='text' onChange={(e) => setinfo({ ...info, user_name: e.target.value })} />
+                <label>email</label>
+
                 <input type='text' onChange={(e) => setinfo({ ...info, email: e.target.value })} />
+                <label>password</label>
+
                 <input type='text' onChange={(e) => setinfo({ ...info, password: e.target.value })} />
                 <button type='submit'>signup</button>
 
